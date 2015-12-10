@@ -2,22 +2,22 @@
 
 Implement password management application that allows the user to change the password for the selected services.
 
-You can find UI mockups in './mockup/mockup.pdf' (but you are not obliged to follow it).
+You can find UI mockups in [mockup.pdf](mockup/mockup.pdf) (but you are not obliged to follow it).
 
-Send the pull request when you are ready.
+Send the pull request when you are ready. If you have any comments or instructions - write them to [COMMENTS.md](COMMENTS.pdf).
 
 
 ## Authentication
-Before user start working with the system, he must log in. Use '/api/user/login' to authenticate user. Any login === password combination is valid (e.g. { login: 'johngold', password: 'johngold' }).
+Before the user starts working with the system, he must log in. Use '/api/user/login' to authenticate user. Any login === password combination is valid (e.g. { login: 'johngold', password: 'johngold' }).
 
-In the response you will receive authorization token. All following requests require authorization token in 'Authorization' header. If the token has expired (back-end will respond with 401 status code) - the application should prompt the user to re-login and restore the work without loss of form data.
+In the response you will receive an authorization token. All following requests require authorization token in 'Authorization' header. If the token has expired (back-end will respond with 401 status code) - the application should prompt the user to re-login and restore the work without loss of form data.
 
 The user should be able to change login by clicking on 'Sign off' button.
 
 
 ## Change password
 Use '/api/services' to get the list of services.
-Application must ensure that new password satisfies following restrictions:
+Application must ensure that new password satisfies the following restrictions:
 - Min length: 3 symbols.
 - Max length: 30 symbols.
 - There is at least 1 character in lowercase.
