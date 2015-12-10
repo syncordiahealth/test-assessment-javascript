@@ -4,7 +4,7 @@ Implement password management application that allows the user to change the pas
 
 You can find UI mockups in [mockup.pdf](mockup/mockup.pdf) (but you are not obliged to follow it).
 
-Send the pull request when you are ready. If you have any comments or instructions - write them to [COMMENTS.md](COMMENTS.pdf).
+Send the pull request when you are ready. If you have any comments or instructions - write them to [COMMENTS.md](COMMENTS.md).
 
 
 ## Authentication
